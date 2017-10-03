@@ -94,6 +94,7 @@ sub LoadConfiguration($)
             $CFG{$cfg_name}{$k} = ${$val}{$k};
 
             printf( " %-35s: %-17s : %s\n", $cfg_name, $cmd_hash ? $src : "detected", $k . " => " . ${$val}{$k} );
+			printf( " %-35s: %-17s : %s\n", $cfg_name, $cmd_hash ? $src : "detected", $k . " => " . ${$val}{$k} );
          }
       }
       else
